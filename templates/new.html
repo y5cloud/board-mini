@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>새 글 작성</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>새 글 작성</h1>
+    <form method="POST">
+        <div>
+            <input type="text" name="title" placeholder="제목" required>
+        </div>
+        <div>
+            <textarea name="content" placeholder="내용" rows="10" cols="50" required></textarea>
+        </div>
+        <button type="submit">등록</button>
+        <a href="/">취소</a>
+    </form>
+</body>
+</html>

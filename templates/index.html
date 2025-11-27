@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>게시판</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>게시판</h1>
+    <a href="/new">글쓰기</a>
+    <ul>
+        {% for id, title, created in posts %}
+        <li>
+            <a href="/post/{{ id }}">{{ title }}</a> ({{ created }})
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
